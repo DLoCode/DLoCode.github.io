@@ -39,6 +39,23 @@
       <a href="mailto:Derriklopez1992@gmail.com">Send me a message</a>
     </div>
   </div>
+  <div class="contact">
+    <form action="" method="post" id="contact-form">
+      <label class="standard-label" for="contact-email"></label>
+      <h3>E-mail</h3>
+      <input type="email" id="contact-email" pattern="user@example.com" placeholder="Your email" required>
+      <br>
+      <label class="standard-label" for="contact-phone"></label>
+      <h3>Phone number</h3>
+      <input type="tel" id="contact-phone" placeholder="Your telephone #">
+      <br>
+      <label class="standard-label" for="message"></label>
+      <h3>Message</h3>
+      <textarea maxlength="250" id="message" placeholder="Your message" required></textarea>
+      <br>
+      <input type="submit" id="submit-message" value="send message">
+    </form>
+  </div>
   <footer>
     <p>You can find me on</p>
     <div class="social-media">
@@ -50,20 +67,6 @@
     <a target="_blank" href="https://facebook.com/DerrikLopez" rel="noopener nofollow"><img width="30px" height="30 px" src="img/fb_logo.svg" alt="Facebook"></a>
     </div>
   </footer>
-</div>
-<div>
-  <form action="" method="post" id="contact-form">
-    <label class="standard-label" for="contact-email">E-mail: </label>
-    <input type="email" id="contact-email" pattern="@example.com" required>
-
-    <label class="standard-label" for="contact-phone">Telephone: </label>
-    <input type="tel" id="contact-phone">
-
-    <label class="standard-label" for="message">Message: </label>
-    <textarea maxlength="250" id="message" required></textarea>
-
-    <input type="submit" value="send message">
-  </form>
 </div>
 <script src="js/tota11y.min.js"></script>
 </body>

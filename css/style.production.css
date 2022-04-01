@@ -21,6 +21,7 @@ active link color (light blue): #1de4ef;
   --light-green: #cdcc;
   --al-color: #1de4ef;
   --bordbot-color: rgba(0, 0, 0, 0.3);
+  --cloud-color: #fff;
 }
 
 body {
@@ -43,6 +44,11 @@ h2 {
   font-size: 28px;
   font-weight: 700;
   line-height: 1.6;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 700;
 }
 
 a {
@@ -103,7 +109,20 @@ a:active {
 div {
   padding: 10px; /* adds a 10px inner spacing to all sides */
   margin: 10px; /* adds a 10 px outer spacing to all sides */
-  border: 1px solid black; /* attributes describe: thickness, thickness, type, color */
+}
+
+.about-wrapper {
+  text-align: center;
+}
+
+.experience-table {
+  margin: auto;
+  padding-bottom: 15px;
+}
+
+.illustration-wrapper {
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .profile__portrait {
@@ -149,6 +168,12 @@ div {
   margin: 0 auto;
 }
 
+img.page-header__item {
+  width: 350px;
+  height: auto;
+  align-self: left;
+}
+
 .page-header__item {
   -webkit-box-flex: 0;
   -ms-flex: 0 1 200px;
@@ -186,6 +211,32 @@ div {
 
 .navigation-list__item--active {
   text-decoration: none;
+}
+
+form {
+  display: block;
+  padding: 15px;
+}
+
+.contact {
+  max-width: 750px;
+  margin: 0 auto;
+  padding: 15px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 30px;
+  text-align: center;
+}
+
+form input,
+textarea {
+  padding: 3px;
+  width: 275px;
+  border-radius: 5px;
+}
+
+#submit-message {
+  width: 200px;
 }
 
 .grid {
@@ -275,6 +326,7 @@ div {
 }
 
 .cloud-front {
+  color: var(--cloud-color);
   -webkit-animation: 30s cloud-move infinite alternate linear;
   animation: 30s cloud-move infinite alternate linear;
 }
@@ -304,6 +356,7 @@ div {
 }
 
 .cloud-back {
+  color: var(--cloud-color);
   -webkit-animation: 34s cloud-move-reverse infinite alternate linear;
   animation: 34s cloud-move-reverse infinite alternate linear;
 }

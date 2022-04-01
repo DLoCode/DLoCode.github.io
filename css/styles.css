@@ -94,7 +94,6 @@ a:active {
 div {
   padding: 10px; /* adds a 10px inner spacing to all sides */
   margin: 10px; /* adds a 10 px outer spacing to all sides */
-  border: 1px solid black; /* attributes describe: thickness, thickness, type, color */
 }
 
 .profile__portrait {
